@@ -50,6 +50,32 @@ Bullet类
     - setLive(boolean live)设置子弹是否有效。
     - getX(),getY()获得子弹的位置坐标。
 
+EnemyBullet
+-----------
+1．UML类图
+
+![此处输入图片的描述][1]
+
+
+  [1]: http://thumbnail0.baidupcs.com/thumbnail/d7318304ef0243555d3b0e8c26ee052c?fid=1817384346-250528-998873138804300&time=1495090800&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-PCr4Wxg5jvlY6bfR1fcFqivmgks=&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3192622840697723959&dp-callid=0&size=c710_u400&quality=100
+
+ - 详细分析
+
+    (1)	成员变量
+    
+    - x,y为int类型变量，记录敌机位置坐标。
+    - bulletspeed为int类型变量，初始值为15，用来设置子弹速度的变量。
+    - live为boolean类型变量，判断子弹是否为有效状态。
+    - enemyplanebullet为Image类型变量，敌机子弹所加载的位图。
+    (2)	成员方法
+    
+    - EnemyBullet(int x,int y)构造方法，初始敌机子弹的位置。
+    - draw(Graphics g)绘制敌机子弹的方法，用来重新绘制。
+    - isLive()敌机子弹是否为存活状态。
+    - setLive(boolean live)设置子弹的状态。
+    - getX(),getY()获取敌机子弹的坐标，用来重新绘制。
+
+
 
 
  
