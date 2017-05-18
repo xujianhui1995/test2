@@ -37,11 +37,13 @@ Bullet类
 2.详细分析
 
 (1) 成员变量
+
     - BULLET_SPEED为int类型变量，初始为15.战机发射子弹的速率。
     - x,y为int类型变量，记录子弹的位置。
     - live为boolean类型的变量，判断子弹是否为有效状态。
     - bullet为Image类型变量，加载的子弹类图。
 (2) 成员方法
+
     - Bullet(int x,int y)构造方法，子弹位图绘制的位置。
     - draw(Graphics g)绘制子弹位图的方法。
     - isLive()判断子弹是否为有效状态。
