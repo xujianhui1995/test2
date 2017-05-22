@@ -3,7 +3,7 @@ MyPlane 类
 
 1.UML类图
 
-![](http://thumbnail0.baidupcs.com/thumbnail/fb0d62a95824dfc599428dc447f54ba9?fid=1817384346-250528-690497777942691&time=1495087200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-GyoYgT2qkPUzgwvqJgSSYWmWkw4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3191675424964360478&dp-callid=0&size=c710_u400&quality=100)
+![](https://github.com/xujianhui1995/Game/blob/master/MyPlane.jpg)
 
 2.详细分析
 
@@ -32,7 +32,7 @@ Bullet类
 ![bullet][1]
 
 
-  [1]: http://thumbnail0.baidupcs.com/thumbnail/0dd436eb239b826205d5b0da861473db?fid=1817384346-250528-307662065856761&time=1495090800&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-hPhnP15btCvxamjQ2sGalCX/a3o=&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3192471056056753460&dp-callid=0&size=c710_u400&quality=100
+  [1]: https://github.com/xujianhui1995/Game/blob/master/Bullet.jpg
 
 2.详细分析
 
@@ -57,7 +57,7 @@ EnemyBullet
 ![此处输入图片的描述][1]
 
 
-  [1]: http://thumbnail0.baidupcs.com/thumbnail/d7318304ef0243555d3b0e8c26ee052c?fid=1817384346-250528-998873138804300&time=1495090800&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-PCr4Wxg5jvlY6bfR1fcFqivmgks=&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3192622840697723959&dp-callid=0&size=c710_u400&quality=100
+  [1]: https://github.com/xujianhui1995/Game/blob/master/EnemyBullet.jpg
 
  - 详细分析
 
