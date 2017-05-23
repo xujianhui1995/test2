@@ -27,8 +27,100 @@ MyPlane 类
     -   isLive()战机是否存活。
     -   setLive(boolean live)设置飞机存活状态。
 
+Bullet 类
+-------
+1．UML类图
+
+![Bullet类][1]
 
 
+  [1]: https://github.com/xujianhui1995/Game/blob/master/Bullet.jpg
+
+2.详细分析
+
+(1) 成员变量
+
+  -   BULLET_SPEED为int类型变量，初始为15.战机发射子弹的速率。
+    -   x,y为int类型变量，记录子弹的位置。
+    -   live为boolean类型的变量，判断子弹是否为有效状态。
+    -   bullet为Image类型变量，加载的子弹类图。 
+ 
+(2) 成员方法
+
+   -   Bullet(int x,int y)构造方法，子弹位图绘制的位置。
+    -   draw(Graphics g)绘制子弹位图的方法。
+    -   isLive()判断子弹是否为有效状态。
+    -   setLive(boolean live)设置子弹是否有效。
+    -   getX(),getY()获得子弹的位置坐标。
+
+EnemyBullet 类
+-----------
+1．UML类图
+
+![EnemyBullet 类][1]
 
 
+  [1]: https://github.com/xujianhui1995/Game/blob/master/EnemyBullet.jpg
+
+2. 详细分析    
+    
+(1)	成员变量
+    
+   -   x,y为int类型变量，记录敌机位置坐标。
+    -   bulletspeed为int类型变量，初始值为15，用来设置子弹速度的变量。
+    -   live为boolean类型变量，判断子弹是否为有效状态。
+    -   enemyplanebullet为Image类型变量，敌机子弹所加载的位图。
+    (2)	成员方法
+    
+    -   EnemyBullet(int x,int y)构造方法，初始敌机子弹的位置。
+    -   draw(Graphics g)绘制敌机子弹的方法，用来重新绘制。
+    -   isLive()敌机子弹是否为存活状态。
+    -   setLive(boolean live)设置子弹的状态。
+    -   getX(),getY()获取敌机子弹的坐标，用来重新绘制
+
+Explode 类
+-------
+1．UML类图
+
+![Explode 类][1]
+
+
+  [1]: https://github.com/xujianhui1995/Game/blob/master/Explode.jpg
+ 
+2. 详细分析
+
+(1)	成员变量       
+
+-    x,y为int类型变量，记录爆炸位置。        	
+-    live 为boolean类型变量，判断爆炸状态。        
+-    Explode1为Image类型对象，用来加载爆炸的位图。
+
+(2)	成员方法
+
+-   Explode(int x,int y)构造方法，初始化爆炸位置及位图。
+-   draw(Graphics g)绘制方法，用来绘制爆炸位图。
+-   isLive()是否为存活状态。
+-   setLive(boolean live)设置是否为存活状态。
+-   getCount()得到爆炸次数。
+-   setCount()设置爆炸次数。
+
+PlayMusic 类
+------------
+1．UML类图
+ 
+2. 详细分析
+
+(1)	成员变量
+
+-  musicFile为File类型对象，用来播放的文件。
+-  clip为 AudioClip类型对象，进行播放的对象。
+-  fileURI 为URI类型对象，文件的URI路径。
+-   fileURL 为URL类型对象，文件的URL路径
+
+(2)	成员方法
+
+-   PlayMusic(String music)构造方法，初始化播放的音频文件。
+-   play()播放方法，进行音频播放。
+-   stop()停止方法，音频停止方法。
+-   loop()循环方法，使音频循环播放。
  
