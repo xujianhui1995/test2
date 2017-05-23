@@ -76,7 +76,7 @@ EnemyBullet 类
     -   draw(Graphics g)绘制敌机子弹的方法，用来重新绘制。
     -   isLive()敌机子弹是否为存活状态。
     -   setLive(boolean live)设置子弹的状态。
-    -   getX(),getY()获取敌机子弹的坐标，用来重新绘制
+- getX(),getY()获取敌机子弹的坐标，用来重新绘制
 
 Explode 类
 -------
