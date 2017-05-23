@@ -18,14 +18,14 @@ MyPlane 类
 (2). 成员方法
  
 -   MYPlane(int x,int y)构造函数，初始化我方战机的位置，使其位于中央。
-    -   draw(Graphics g)绘图方法，我方战机位置改变时重新绘制。
-    -   keyPressed(KeyEvent e)按键方法，键盘上按下相应的键码进行相应的移动。
-    -   keyReleased(KeyEvent e)按键释放方法，按键释放使之不再移动。
-    -   move()战机移动方法，键按下后进行移动。
-    -   getX()获得战机的横向位置。
-    -   getY()获得战机的纵向位置。
-    -   isLive()战机是否存活。
-    -   setLive(boolean live)设置飞机存活状态。
+  -   draw(Graphics g)绘图方法，我方战机位置改变时重新绘制。
+  -   keyPressed(KeyEvent e)按键方法，键盘上按下相应的键码进行相应的移动。
+  -   keyReleased(KeyEvent e)按键释放方法，按键释放使之不再移动。
+  -   move()战机移动方法，键按下后进行移动。
+  -   getX()获得战机的横向位置。
+  -   getY()获得战机的纵向位置。
+  -   isLive()战机是否存活。
+  -   setLive(boolean live)设置飞机存活状态。
 
 Bullet 类
 -------
