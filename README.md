@@ -132,7 +132,9 @@ GameBox 类
 -------------
 
 1．UML类图
-![](https://github.com/xujianhui1995/Game/blob/master/GameBox.jpg)
+
+![](https://github.com/xujianhui1995/Game/blob/master/GameBox.jpg
+
 2. 详细分析
 
 (1)	成员变量
