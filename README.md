@@ -128,3 +128,32 @@ PlayMusic 类
 -   stop()停止方法，音频停止方法。
 -   loop()循环方法，使音频循环播放。
  
+GameBox 类
+-------------
+
+1．UML类图
+![](https://github.com/xujianhui1995/Game/blob/master/GameBox.jpg)
+2. 详细分析
+
+(1)	成员变量
+
+- GAME_WIDTH是int型变量 设置游戏面板的宽度为800。
+- GAME_HEIGHT 是int型变量设置面板的高度为600。
+-  f1I Image类型的对象，用来设置字体的颜色大小和行间距。
+- backgroundimage 用来加载背景图片。
+- plane Image类型变量，用来设置加载飞机的图片。
+- PLANE_WIDTH int类型变量，用来设置飞机的高度。
+- PLANE_HEIGHT int类型变量 用来设置飞机的宽度。
+- Explode1 Image类型的对象。用来加载爆炸的图片。
+- EXPLODE1_WIDTH int类型变量，用来设置爆炸的范围的高度。
+- EXPLODE1_HEIGHT int类型变量，用来设置爆炸范围的宽度。
+- Bullet Image类型的对象，用来设置子弹需要加载的图片。
+- BULLET_WIDTH int型变量，用来设置子弹的宽度。
+- BULLET_HEIGHT int 型变量，用来设置子弹的高度。
+- enemy1 Image类型的对象，用来设置敌机的宽度。
+- enemy2 Image类型的对象，用来设置敌机的高度。
+- enemybullet Image类型的对象，用来加载敌机发出的子弹。
+- ENEMYBULLET_WIDTH int类型的变量，用来设置子弹的大小。
+- ENEMYBULLET_HEIGHT int 类型的变量，用来设置子弹的大小。
+- back_music 字符串类型变量，加载背景音乐。
+- bomb_music字符串类型变量，加载子弹爆炸音乐。
