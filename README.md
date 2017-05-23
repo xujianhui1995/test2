@@ -24,8 +24,8 @@ MyPlane 类
     -   move()战机移动方法，键按下后进行移动。
     -   getX()获得战机的横向位置。
     -   getY()获得战机的纵向位置。
-    -   isLive()战机是否存活。
-    -  setLive(boolean live)设置飞机存活状态。
+    -   isLive()战机是否存    
+-   setLive(boolean live)设置飞机存活状态。
 
 Bullet 类
 -------
@@ -51,7 +51,7 @@ Bullet 类
     -   draw(Graphics g)绘制子弹位图的方法。
     -   isLive()判断子弹是否为有效状态。
     -   setLive(boolean live)设置子弹是否有效。
-    -   getX(),getY()获得子弹的位置坐标。
+-   getX(),getY()获得子弹的位置坐标。
 
 EnemyBullet 类
 -----------
