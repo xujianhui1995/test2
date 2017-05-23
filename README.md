@@ -159,3 +159,62 @@ GameBox 类
 - ENEMYBULLET_HEIGHT int 类型的变量，用来设置子弹的大小。
 - back_music 字符串类型变量，加载背景音乐。
 - bomb_music字符串类型变量，加载子弹爆炸音乐。
+
+DB 类
+---------
+
+1．UML类图
+
+![](https://github.com/xujianhui1995/Game/blob/master/DB.jpg)
+
+2. 详细分析
+
+(1)	成员变量
+
+- url为String类型对象，数据库URL路径。用来连接数据库。
+- driver为String类型对象，加载数据库的驱动。
+- conn为Connection类型对象，用来与数据库进行连接。
+- stmt为Statement类型对象，用来操作Sql语句从而操纵数据库。
+
+(2)	成员方法
+
+- DB()构造方法，加载数据库驱动，实现数据库连接。
+- excuteWrite(String name,String score)将数据写入数据库方法。
+- excuteRead()从数据库中读取数据方法。
+
+StartFrame 类
+-----
+1．UML类图
+
+
+
+2. 详细分析
+(1)	成员变量
+
+- bk为Image类型对象，用来加载游戏的背景位图。
+- myplane为MyPlane类型对象，建立我方战机。
+- sourse 为float类型变量，存储分数。
+- death, life为我方战机死亡次数和生命值。
+- bulletlist为 ArrayList<Bullet>对象，用来存储子弹的线性表。
+-  	explodelist 为ArrayList<Explode>对象，用来存储爆炸对象的线性表。
+- enemybulletlist为 ArrayList<EnemyBullet>对象，用来存储敌机子弹对象的线性表。
+- exItem,score为Jmenu类型对象，菜单条目。
+- jp为Jpanel对象，框架类的面板对象。
+- db为DB对象，用来进行数据库操作。
+- musicBackground musicBomb为PlayMusic对象，用来播放背景音乐。
+(2)	成员方法
+- StartFrame()构造方法，初始化面板及位图。加载游戏界面。
+- queryRecord()查询分数记录方法。
+- void run()游戏进行线程方法，实现游戏的运行。
+- clearEnemyBullet()清除无效的敌机子弹。
+- clearBullet()清除无效的子弹。
+- createBullet()创建子弹。
+- clearEnemyplane()清除敌机状态为False的对象。
+- clearExplode()清除爆炸状态为False的对象。
+- hitPlane()攻击敌机的方法。
+- impactMyplane()判断是否碰撞。
+- hitMyplane()我方战机被攻击的方法。
+- endGame()结束游戏，扫尾方法。
+- recored()记录成绩方法。
+- ifEnd()判断是否结束。
+- actionPerformed(ActionEvent e)菜单条目的动作事件实现方法。
