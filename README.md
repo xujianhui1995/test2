@@ -25,7 +25,7 @@ MyPlane 类
     -   getX()获得战机的横向位置。
     -   getY()获得战机的纵向位置。
     -   isLive()战机是否存活。
-    -   setLive(boolean live)设置飞机存活状态。
+    -  setLive(boolean live)设置飞机存活状态。
 
 Bullet 类
 -------
