@@ -16,6 +16,8 @@ public class MyFrame extends Frame {
 	 */
 	private static final long serialVersionUID = 1L;
 	Image win_image = null;
+	Plane p = new Plane("images/LXPlane.png", Constants.PLANE_X, Constants.PLANE_Y, Constants.PLANE_SIZE, Constants.PLANE_SIZE);
+
 	public void LaunchFrame() {
 		setTitle("飞机大战");
 		setSize(Constants.FRAME_WIDTH, Constants.FRAME_HEIGHT);

@@ -6,8 +6,8 @@ import java.awt.event.KeyEvent;
 
 import frame.MyFrame;
 import model.BackGround;
-import model.Bullet;
 import model.Plane;
+import model.Stars;
 import util.Constants;
 
 public class MyGameFrame extends MyFrame {
@@ -15,12 +15,20 @@ public class MyGameFrame extends MyFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	Plane p = new Plane("images/MyPlane.png", Constants.PLANE_X, Constants.PLANE_Y, Constants.PLANE_SIZE,
+	Stars sun = new Stars("images/sun.png", Constants.FRAME_WIDTH / 2, Constants.FRAME_HEIGHT / 2);
+	Plane p = new Plane("images/LXPlane.png", Constants.PLANE_X, Constants.PLANE_Y, Constants.PLANE_SIZE,
 			Constants.PLANE_SIZE);
+	EnemyPlane e= new EnemyPlane("images/LXPlane1.png",Ran(), 0, Constants.PLANE_SIZE,
+			Constants.PLANE_SIZE);
+	public int Ran(){
+		Random random=new Random();
+		return random.nextInt(507)%465+43;
+	}
 	public void paint(Graphics g) {
 		BackGround.drawMe(g);
+		sun.draw(g);
 		p.draw(g);
-//		b.drawBullet(g);		
+		e.draw(g);
 	}
 
 	public static void main(String[] args) {

@@ -18,8 +18,8 @@ public class BackGround {
 		move();
 	}
 	public static void move(){
-		y+=3;
-		y1+=3;
+		y+=Constants.BG_MOVE;
+		y1+=Constants.BG_MOVE;
 		if(y>Constants.FRAME_HEIGHT){
 			y=y1-Constants.FRAME_HEIGHT;
 		}else if(y1>Constants.FRAME_HEIGHT){

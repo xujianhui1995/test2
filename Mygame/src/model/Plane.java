@@ -1,42 +1,42 @@
 package model;
 
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.List;
 
 import util.Constants;
+import util.Direction;
+import util.ImageUtil;
 
-public class Plane extends FlyObject {
+public class Plane {
 
+	Image img;
+	int x, y;
+	int width, height;
+
+	Direction dir = null;
 	boolean up = false;
 	boolean down = false;
 	boolean left = false;
 	boolean right = false;
-	boolean fire;
-	List<Bullet> bulletlist = new ArrayList<Bullet>();
 
 	public void draw(Graphics g) {
-		g.drawImage(img, x, y, width, height, null);
+		g.drawImage(img, x, y, null);
 		move();
-		fire(g);
+
 	}
 
 	public Plane(String path, int x, int y, int width, int height) {
-		super(path, x, y, width, height);
+		this.img = ImageUtil.getZoomImage(path, width, height);
+		this.width = img.getWidth(null);
+		this.height = img.getHeight(null);
 		this.x = x - width / 2;
 		this.y = y - height / 2;
-		this.width = Constants.PLANE_SIZE;
-		this.height = Constants.PLANE_SIZE;
-	}
 
-	public void fire(Graphics g) {
-		for (Bullet bullet : bulletlist) {
-			bullet.drawBullet(g);
-		}
 	}
 
 	public void move() {
+
 		if (left) {
 			this.x -= Constants.PLANE_SPEED;
 		}
@@ -79,10 +79,6 @@ public class Plane extends FlyObject {
 		case KeyEvent.VK_DOWN:
 			down = true;
 			break;
-		case KeyEvent.VK_SPACE:
-			Bullet b = new Bullet("images/MyBullet.png",(int)(x+0.5*width),y, 0, 0);
-			bulletlist.add(b);
-			break;  
 		default:
 			break;
 		}
@@ -101,9 +97,6 @@ public class Plane extends FlyObject {
 			break;
 		case KeyEvent.VK_DOWN:
 			down = false;
-			break;
-		case KeyEvent.VK_SPACE:
-			fire = false;
 			break;
 		default:
 			break;
