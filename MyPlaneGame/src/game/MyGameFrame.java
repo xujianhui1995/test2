@@ -18,11 +18,17 @@ public class MyGameFrame extends MyFrame {
 	Stars sun = new Stars("images/sun.png", Constants.FRAME_WIDTH / 2, Constants.FRAME_HEIGHT / 2);
 	Plane p = new Plane("images/LXPlane.png", Constants.PLANE_X, Constants.PLANE_Y, Constants.PLANE_SIZE,
 			Constants.PLANE_SIZE);
-
+	EnemyPlane e= new EnemyPlane("images/LXPlane1.png",Ran(), 0, Constants.PLANE_SIZE,
+			Constants.PLANE_SIZE);
+	public int Ran(){
+		Random random=new Random();
+		return random.nextInt(507)%465+43;
+	}
 	public void paint(Graphics g) {
 		BackGround.drawMe(g);
 		sun.draw(g);
 		p.draw(g);
+		e.draw(g);
 	}
 
 	public static void main(String[] args) {
