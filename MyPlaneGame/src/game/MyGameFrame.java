@@ -30,6 +30,8 @@ public class MyGameFrame extends MyFrame {
 		// int x = (new Random()).nextInt(550);
 		ep = new EnemyPlane("images/EnemyPlane.png", 100, 100, Constants.PLANE_SIZE, Constants.PLANE_SIZE);
 		ep_list.add(ep);
+		ep = new EnemyPlane("images/EnemyPlane.png", 300, 100, Constants.PLANE_SIZE, Constants.PLANE_SIZE);
+		ep_list.add(ep);
 	}
 
 	public void paint(Graphics g) {
@@ -40,18 +42,17 @@ public class MyGameFrame extends MyFrame {
 		p.draw(g);
 		/* 绘制敌机 */
 		for (int i = 0; i < ep_list.size(); i++) {
-
 			EnemyPlane enplane = ep_list.get(i);
 			boolean b = false;
 			for (int j = 0; j < p.getBulletlist().size(); j++) {
-
 				b=enplane.isIntersected(p.getBulletlist().get(j));
-				
+				if(b)break;
 			}
 			if(b==true){
 				ep_list.remove(enplane);
+			}else{
+				enplane.draw(g);
 			}
-			enplane.draw(g);
 
 		}	
 		}

@@ -21,9 +21,11 @@ public class Bullet extends FlyObject {
 	}
 
 	public void Move() {
-		y -= Constants.BULLET_SPEED;
-		if (y < 0) {
-			setLive(false);
+		if (isLive == true) {
+			y -= Constants.BULLET_SPEED;
+			if (y < 0) {
+				setLive(false);
+			}
 		}
 	}
 
