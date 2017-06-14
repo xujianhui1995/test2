@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import util.Constants;
 
 public class Bullet extends FlyObject {
-	
+
 	public Bullet(String path, int x, int y, int width, int height) {
 		super(path, x, y, width, height);
 		this.x = x;
@@ -13,18 +13,18 @@ public class Bullet extends FlyObject {
 	}
 
 	public void drawBullet(Graphics g) {
-		if(isLive==true){
+		if (isLive == true) {
 			g.drawImage(img, x, y, null);
 			Move();
 		}
-					
+
 	}
 
 	public void Move() {
 		y -= Constants.BULLET_SPEED;
-//		if (y < 0) {
-//			isLife = false;
-//		}
+		if (y < 0) {
+			setLive(false);
+		}
 	}
 
 }

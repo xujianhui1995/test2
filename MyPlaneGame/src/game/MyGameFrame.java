@@ -39,13 +39,21 @@ public class MyGameFrame extends MyFrame {
 		/* 绘制我方飞机 */
 		p.draw(g);
 		/* 绘制敌机 */
-			//EnemyPlane enplane = ep_list.get(i);
-			EnemyPlane enplane = new EnemyPlane("images/EnemyPlane.png", 100, 100, Constants.PLANE_SIZE, Constants.PLANE_SIZE);
-			for (int i = 0; i < p.getBulletlist().size(); i++) {
-				enplane.isIntersected(p.getBulletlist().get(i));
+		for (int i = 0; i < ep_list.size(); i++) {
+
+			EnemyPlane enplane = ep_list.get(i);
+			boolean b = false;
+			for (int j = 0; j < p.getBulletlist().size(); j++) {
+
+				b=enplane.isIntersected(p.getBulletlist().get(j));
+				
 			}
-			enplane.draw(g);				
-		
+			if(b==true){
+				ep_list.remove(enplane);
+			}
+			enplane.draw(g);
+
+		}	
 		}
 				
 

@@ -1,5 +1,7 @@
 package util;
 
+import java.awt.Image;
+
 public class Constants {
 	/* 窗口类常量 */
 	public static final int FRAME_WIDTH = 550;
@@ -11,7 +13,8 @@ public class Constants {
 	public static final int PLANE_SPEED = 5;
 	public static final int PLANE_X = 280;
 	public static final int PLANE_Y = 650;
-	/* 背景图片移动速度 */
+	/* 游戏背景 */
+	public static final Image BG_IMAGE=ImageUtil.getImage("images/bg.jpg");
 	public static final int BG_MOVE=5;
 	/* 子弹速度 */
 	public static final int BULLET_SPEED=8;

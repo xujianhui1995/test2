@@ -4,13 +4,12 @@ package model;
 import java.awt.Graphics;
 import java.awt.Image;
 import util.Constants;
-import util.ImageUtil;
 
 public class BackGround {
 	static int x=0;
 	static int y=0;
 	static int y1=Constants.FRAME_HEIGHT;
-	static Image bgImage = ImageUtil.getImage("images/bg.jpg");
+	static Image bgImage =Constants.BG_IMAGE;
 	
 	public static void drawMe(Graphics g){
 		g.drawImage(bgImage,x, y, Constants.FRAME_WIDTH,Constants.FRAME_HEIGHT,  null);
