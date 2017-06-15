@@ -24,6 +24,8 @@ public class Explode{
 		if(count<=15){
 			g.drawImage(imgs[count], (int)x, (int)y, null);
 			count++;
+		}else{
+			count=0;
 		}
 	}
 	

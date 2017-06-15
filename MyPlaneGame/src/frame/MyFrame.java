@@ -7,7 +7,6 @@ import java.awt.Image;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-import model.Plane;
 import util.Constants;
 
 public class MyFrame extends Frame {

@@ -8,6 +8,7 @@ public class EnemyPlane extends FlyObject {
 	public void draw(Graphics g) {
 		if (isLive == true) {
 			g.drawImage(img, x, y, width, height, null);
+			//move();
 		}
 	}
 
@@ -18,7 +19,7 @@ public class EnemyPlane extends FlyObject {
 	}
 
 	private void move() {
-		this.y += Constants.PLANE_SPEED;
+		this.y +=5;
 	}
 
 }

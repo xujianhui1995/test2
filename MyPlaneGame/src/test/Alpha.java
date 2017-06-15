@@ -7,17 +7,15 @@ import java.util.List;
 import org.junit.Test;
 
 public class Alpha {
-	public static void main(String[] args) {
-
-		int a=1;
-		int b;
-		if(a==1){
-			b=9;
-		}else{
-			b=1;
-		}
-		System.out.println(b);
+		@Test	
+		public void testBreak1() { 
+	        System.out.println("--------测试break1-------"); 
+	        for (int i = 1; i <= 5; i++) { 
+	            if (i == 3) 
+	            continue; 
+	            System.out.println("i=" + i); 
+	        } 
+	    } 
 
 	}
 
-}
